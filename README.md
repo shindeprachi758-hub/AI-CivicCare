@@ -46,3 +46,6 @@ Setup instructions will be added as the frontend and backend are configured.
 Do not commit passwords, API keys, production credentials, or real user data.
 Use environment variables for local and deployment configuration.
 '@ | Set-Content -Encoding utf8 README.md
+
+# AI-CivicCare
+AI-powered civic complaint management and response platform
