@@ -1,0 +1,36 @@
+@'
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+
+# Django uploads and local database files
+media/
+db.sqlite3
+
+# Node.js
+node_modules/
+dist/
+.vite/
+
+# Build and test outputs
+coverage/
+*.log
+
+# IDE and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local generated files
+*.tmp
+'@ | Set-Content -Encoding utf8 .gitignore
