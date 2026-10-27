@@ -8,7 +8,17 @@ class UserProfile(models.Model):
     ROLE_CHOICES = [
         ('CITIZEN', 'Citizen'),
         ('OFFICER', 'Municipal Officer'),
+        ('ADMIN', 'Administrator'),
     ]
+
+    department = models.ForeignKey(
+    'departments.Department',
+    on_delete=models.SET_NULL,
+    null=True,
+    blank=True,
+    related_name='officer_profiles'
+)
+
 
     user = models.OneToOneField(
         User,
